@@ -1,0 +1,20 @@
+{
+  "name": "demo-ws",
+  "version": "1.0.0",
+  "description": "Demo WS app with expressjs",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@anuraagdjain",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "redis": "^3.0.2",
+    "uuid": "^8.3.2",
+    "ws": "^7.4.4"
+  }
+}
