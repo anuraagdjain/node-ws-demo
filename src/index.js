@@ -60,22 +60,3 @@ app.get('/', (req, res) => res.send('OK'));
 httpServer.listen(PORT, process.env.APP_SERVER, () => {
   console.log('App running on ' + PORT);
 });
-
-/**
- * 
- * 
- * Chrome client code
-  
-let wsClient = new WebSocket(`ws://localhost:5000`);
-wsClient.onmessage = function(message){
-    let msg = JSON.parse(message.data);
-    
-    if(msg && Object.hasOwnProperty.call(msg,'type') && msg.type === '__ping__'){
-        console.log('received ping from server');
-        wsClient.send(JSON.stringify({type: '__pong__'}));
-        return;
-    }
-    console.log(message);
-};
- * 
- */
